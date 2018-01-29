@@ -4,7 +4,7 @@ _A simple static file server_
 
 `guzhidui` is a very simple static file server,
 written in Rust, built on top of the [Iron](https://github.com/iron/iron) framework,
-and the iron-archivist library.
+and the [iron-archivist](https://github.com/MislankaNova/iron-archivist) library.
 best suited for the serving of repositories
 that uses file system directory structure to organise its contents.
 
