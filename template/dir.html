@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+{% include "header.html" %}
+<meta name="description" content="Contents of /{{ path }}."/>
+
+<title>/{{ path }}</title>
+
+</head>
+
+<body>
+<div id="container">
+<h1 id="current-path">/{{ path }}</h1> 
+<div id="dir-setting">
+  <span>order</span>
+  <a href="?order=lexicographical">lexicographically</a>
+  <a href="?order=chronological">chronologically</a>
+</div>
+<ul id="entry-list">
+  <li>
+  <a href="..">..</a>
+  {% for entry in entries %}
+  <li>
+  <a href="{{ entry.file_name | urlencode }}{% if entry.is_dir %}/{% endif %}">
+    <span class="filename">{{ entry.file_name }}</span>
+    <span class="modified">{{ entry.modified }}</span>
+  </a>
+  </li>
+  {% endfor %}
+</ul>
+{% include "footer.html" %}
+</div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<head>
+
+{% include "header.html" %}
+<meta name="description" content="/{{ path }} - Error {{ code }}"/>
+
+<title>/{{ path }}</title>
+
+</head>
+
+<body>
+<div id="container">
+<h1 id="current-path">/{{ path }}</h1> 
+<h2 id="error-code">Error {{ code }}</h2> 
+<a class="up-link nav" href="..">back</a>
+<p class="error-message">{{ message }}</p>
+{% include "footer.html" %}
+</div>
+</body>
+
+</html>

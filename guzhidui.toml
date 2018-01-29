@@ -1,0 +1,30 @@
+# Configuration for the guzhidui server
+#
+# Run in the root directory of the repository the following command:
+# `cargo run --bin guzhidui --features="tera clap" -- --config guzhidui.toml'
+# To serve all the Rust source files and CSS files in the src directory
+#
+
+# The directory to serve
+# This one, for example, would serve the directory of this package
+root_dir = "."
+
+# The address and port to listen
+listen = "localhost:5000"
+
+# If allow_all is on then all files in the served directory are served
+# otherwise only files whose extensions are on the `allow' list are served
+allow_all = false
+
+# Only files with these extensions are allowed
+allowed_extensions = [ "rs", "txt", "md", "html", "jpg", "png" ]
+
+# These files are allowed as well
+allowed_file_names = [ "style.css", ".gitignore", "Cargo.toml" ]
+
+# Any path containing these names will be blocked
+blocked_file_names = [ "target" ]
+
+# Files with these extensions will be rendered as Markdown script
+# Leave the values empty to render nothing as Markdown
+markdown = [ "md" ]

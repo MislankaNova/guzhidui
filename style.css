@@ -1,0 +1,107 @@
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+  
+  font-family: monospace;
+}
+
+#container {
+  max-width: 800px;
+
+}
+
+a:link {
+    color: #2020A0;
+    text-decoration: none;
+}
+a:visited { color: #2020A0; }
+a:hover { color: #4040F0; }
+a:active { color: #4040F0; }
+
+#current-path {
+  margin: 5% 0 0 0;
+  font-size: 32pt;
+  color: #404040;
+}
+
+#error-code {
+  font-size: 24pt;
+}
+
+#dir-setting {
+  padding: 4px;
+  width: 100%;
+  font-size: 16pt;
+}
+
+.up-link {
+  display: inline-block;
+  padding: 12px;
+  font-size: 18pt;
+}
+
+#entry-list {
+  padding: 0;
+}
+
+#entry-list li {
+  border-top: 1px solid #404040;
+  list-style: none;
+  font-size: 18pt;
+}
+
+#entry-list li:hover { background-color: #FAFAFF; }
+#entry-list li:active { background-color: #FAFAFF; }
+
+#entry-list li:last-child {
+  border-bottom: 1px solid #404040;
+}
+
+#entry-list li a {
+  display: block;
+  padding: 6px;
+  width: 100%;
+  text-align: justify;
+}
+
+#entry-list li a::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+
+#entry-list li a .filename {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  text-align: left;
+}
+
+#entry-list li a .modified {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  font-size: 14pt;
+  color: #404040;
+  text-align: right;
+}
+
+pre {
+  font-size: 16pt;
+  white-space: pre-wrap;
+}
+
+#content {
+  font-size: 16pt;
+}
+
+.error-message {
+  font-size: 18pt;
+}
+
+#powered-by {
+  display: block;
+  padding: 20px;
+  font-size: 16pt;
+  color: #404040;
+  text-align: right;
+}

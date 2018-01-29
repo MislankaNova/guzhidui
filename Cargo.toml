@@ -1,0 +1,13 @@
+[package]
+name = "guzhidui"
+description = "Simple static file server."
+version = "0.1.0-alpha.1"
+authors = ["MislankaNova <MislankaNova@hotmail.com>"]
+
+[dependencies]
+iron = "0.6"
+iron-archivist = "0.1.0-alpha.1"
+router = "0.6"
+mount = "0.4"
+tera = "0.10"
+clap = "2"

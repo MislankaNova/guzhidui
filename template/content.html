@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+{% include "header.html" %}
+<meta name="description" content="Contents of /{{ path }}."/>
+
+<title>/{{ path }}</title>
+
+</head>
+
+<body>
+<div id="container">
+<h1 id="current-path">/{{ path }}</h1> 
+<a class="up-link nav" href=".">back</a>
+<div id="content">
+{{ content | safe }}
+</div>
+{% include "footer.html" %}
+</div>
+</body>
+
+</html>
